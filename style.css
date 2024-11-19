@@ -8,7 +8,7 @@ body {
 
 /* Poster Section */
 .poster {
-  background-image: url('/img/img1.jpg'); /* Replace with your image */
+  background-image: url('https://i.ibb.co.com/sJ3wxhk/img1.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   height: 400px;
