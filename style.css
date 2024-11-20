@@ -8,7 +8,7 @@ body {
 
 /* Poster Section */
 .poster {
-  background-image: url('https://i.ibb.co.com/sJ3wxhk/img1.jpg'); /* Replace with your image */
+  background-image: url('/img/img1.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -212,7 +212,7 @@ h2::after {
   color: #090fb9;
 }
 .contactP a:hover {
-  /* text-decoration: underline; */
+  
   color: #111317;
 }
 
@@ -241,7 +241,7 @@ h2::after {
   max-width: 800px;
   margin: 0 auto;
   overflow: hidden;
-  height:600px; /* Set a fixed height for the container */
+  height:600px; 
 }
 
 .slide {
@@ -254,7 +254,7 @@ h2::after {
 .slide img {
   width: 500px;
   height: 600px;
-  object-fit: cover; /* Ensures the image fills the container */
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -297,7 +297,35 @@ h2::after {
   }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slideshow h2 {
+    font-size: 1.5rem;
+  }
 
+  .slideshow-container {
+    width: 100%; /* Use full width for mobile */
+  }
+
+  .slide img {
+    width: 100%; /* Adjust images to fit container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow h2 {
+    font-size: 1.2rem;
+  }
+
+  .slideshow p {
+    font-size: 0.9rem;
+  }
+
+  .slide img {
+    border-radius: 5px; /* Reduce border radius for smaller screens */
+  }
+}
 
 
 
